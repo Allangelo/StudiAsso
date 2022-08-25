@@ -23,13 +23,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Accueil</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="publications.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Publications
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="publications.html">Tous les événements</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="evenement1.html">Evenement1</a></li>
+                            <li><a class="dropdown-item" href="evenement2.html">Evenement1</a></li>
+                            <li><a class="dropdown-item" href="evenement3.html">Evenement3</a></li>
+                            <li><a class="dropdown-item" href="evenement4.html">Evenement4</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="publications.html">Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="dons.html">Faire un dons</a>
+                        <a class="nav-link" href="dons.html">Faire un dons</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="adhesion.html">J'adhère</a>
@@ -37,18 +47,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contacts.html">Contacts</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
@@ -60,17 +58,67 @@
 </header>
 
 
-<main>
+<main class="container">
+    <div class="row mt-3">
+        <nav class="col-12" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Faire un dons</li>
+            </ol>
+        </nav>
+    </div>
 
+    <!--Modals doc => https://getbootstrap.com/docs/4.4/components/modal/-->
     <section> <!-- facultatif -->
-
-        </article>
         <article>
-
-        </article>
-    </section>
-    <section> <!-- facultatif -->
-        <article>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#actualiteModal" type="button">
+                Lire la news
+            </button>
+            <div class="modal fade" id="actualiteModal" tabindex="-1" role="dialog" aria-labelledby="actualiteModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="joinModalLabel">
+                                Participer à l'événement
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <label for="name">Nom</label>
+                                <input type="text" class="form-control" id="name" name="name" />
+                                <label for="email">e-mail</label>
+                                <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        name="email"
+                                />
+                                <label for="message">Message</label>
+                                <textarea
+                                        class="form-control"
+                                        id="message"
+                                        name="message"
+                                        rows="3"
+                                ></textarea>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                            >
+                                Fermer
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Faire un don
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </article>
         <article>
@@ -95,8 +143,6 @@
         <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
     </symbol>
 </svg>
-
-<div class="b-example-divider"></div>
 
 <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
