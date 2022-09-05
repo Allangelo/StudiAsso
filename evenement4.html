@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     <link href="bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="bootstrap-5.2.0-dist/js/" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Association Allangelo.org</title>
@@ -34,20 +32,17 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="publications.html">Tous les événements</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="evenement1.html">Evenement1</a></li>
-                            <li><a class="dropdown-item" href="evenement2.html">Evenement1</a></li>
-                            <li><a class="dropdown-item" href="evenement3.html">Evenement3</a></li>
-                            <li><a class="dropdown-item" href="evenement4.html">Evenement4</a></li>
+                            <li><a class="dropdown-item" href="evenement1.html">Apprendre le Lorem ipsum</a></li>
+                            <li><a class="dropdown-item" href="evenement2.html">Le Lorem ipsum et son histoire</a></li>
+                            <li><a class="dropdown-item" href="evenement3.html">Séminaire</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="evenement4.html">Les actions de 2022</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="adhesion.html">J'adhère</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#actualiteModal" type="button">J'adhère</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit">Rechercher</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -72,6 +67,57 @@
             </h1>
         </article>
     </section>
+    <!--modal window-->
+    <div class="modal fade" id="actualiteModal" tabindex="-1" role="dialog" aria-labelledby="actualiteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="joinModalLabel">
+                        Rejoindre l'association
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input
+                                type="text"
+                                class="form-control rounded-3 mb-3"
+                                id="name"
+                                name="name"
+                                placeholder="Nom"
+                        />
+                        <input
+                                type="email"
+                                class="form-control rounded-3 mb-3"
+                                id="email"
+                                name="email"
+                                placeholder="e-mail"
+                        />
+                        <textarea
+                                class="form-control rounded-3 mb-3"
+                                id="message"
+                                name="message"
+                                rows="3"
+                                placeholder="Message"
+                        ></textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                    >
+                        Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        Envoyer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <!-- SVG FOOTER -->

@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     <link href="bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="bootstrap-5.2.0-dist/js/" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Association Allangelo.org</title>
@@ -45,23 +43,12 @@
                         <a class="nav-link" data-bs-toggle="modal" data-bs-target="#actualiteModal" type="button">J'adhère</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit">Rechercher</button>
-                </form>
             </div>
         </div>
     </nav>
 </header>
 
 <main class="container">
-    <div class="row">
-        <nav class="col-12" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">Accueil</li>
-            </ol>
-        </nav>
-    </div>
     <article>
         <section class="row text-center mt-3">
             <h1 class="fw-bold">
@@ -129,7 +116,7 @@
     </section>
     <!--modal window-->
     <div class="modal fade" id="actualiteModal" tabindex="-1" role="dialog" aria-labelledby="actualiteModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content text-dark">
                 <div class="modal-header">
                     <h5 class="modal-title" id="joinModalLabel">
@@ -140,7 +127,8 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <input type="text"
+                        <input
+                            type="text"
                             class="form-control rounded-3 mb-3"
                             id="name"
                             name="name"
@@ -153,13 +141,6 @@
                                 name="email"
                                 placeholder="e-mail"
                         />
-                        <textarea
-                                class="form-control rounded-3 mb-3"
-                                id="message"
-                                name="message"
-                                rows="3"
-                                placeholder="Message"
-                        ></textarea>
                     </form>
                 </div>
                 <div class="modal-footer">
