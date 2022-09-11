@@ -58,16 +58,40 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
                 <li class="breadcrumb-item"><a href="publications.html">Publications</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Evenement1</li>
+                <li class="breadcrumb-item active" aria-current="page">Déploiement du site web de l'association</li>
             </ol>
         </nav>
     </div>
-    <section> <!-- facultatif -->
-        <article class="text-center mt-3">
-            <h1>
-                Association de défense du Lorem ipsum
-            </h1>
-        </article>
+    <section class="row row-cols-1 row-cols-md-2 justify-content-center">
+        <div class="col p-3">
+            <div>
+                <img
+                        src="http://placeimg.com/340/100/nature"
+                        class="card-img-top rounded"
+                        alt=""
+                />
+            </div>
+            <div class="row">
+                <div class="alert col-12 text-center">
+                    <h5>Déploiement du site web de l'association</h5>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-secondary text-black" role="progressbar" style="width: 90%" aria-valuenow="9" aria-valuemin="0" aria-valuemax="10">Participants: 9 / 10</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales lacus vel nulla congue tincidunt. Phasellus eu rhoncus risus.
+                Praesent varius ultricies sem, vel ultrices est vestibulum at. Pellentesque suscipit nulla quis lorem dictum, quis rhoncus justo mattis.
+                Ut venenatis nisi sed ultrices faucibus. Ut quis ornare magna. Etiam dignissim ligula ut ligula gravida scelerisque.
+                Morbi pellentesque nisi non risus malesuada interdum. Quisque sagittis quis mi in varius.
+                Nunc volutpat, lorem vitae commodo accumsan, tellus nisl lobortis massa, at euismod elit mi at justo.
+                Donec eget commodo libero. Sed nec mauris vel arcu faucibus luctus ac ut ligula.
+
+                Nam tristique consectetur suscipit. Aliquam et lectus non elit feugiat aliquet eu nec quam.
+                Suspendisse commodo nisi elit, vel pulvinar purus aliquet eget. Nam semper vel elit nec euismod. Donec consectetur mauris nec mi vestibulum vulputate.
+                Sed facilisis a velit vel bibendum. Aliquam convallis velit pellentesque turpis maximus, sollicitudin dapibus felis porttitor.
+            </div>
+        </div>
     </section>
     <!--modal window-->
     <div class="modal fade" id="actualiteModal" tabindex="-1" role="dialog" aria-labelledby="actualiteModalLabel" aria-hidden="true">
@@ -83,11 +107,11 @@
                 <div class="modal-body">
                     <form>
                         <input
-                            type="text"
-                            class="form-control rounded-3 mb-3"
-                            id="name"
-                            name="name"
-                            placeholder="Nom"
+                                type="text"
+                                class="form-control rounded-3 mb-3"
+                                id="name"
+                                name="name"
+                                placeholder="Nom"
                         />
                         <input
                                 type="email"
